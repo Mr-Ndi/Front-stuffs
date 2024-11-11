@@ -1,0 +1,30 @@
+.greetings{
+    font-size: small;
+    padding-inline: 20px;
+}
+.image{
+    border-radius: 40px;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.one{
+    font-size: xx-large;
+    font-weight: bold;
+    color: gold;
+}
+.two {
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    text-decoration:overline;
+
+}
+.line-through {
+    text-decoration: line-through;
+  }
+.underline {
+    text-decoration: underline;
+}
+  
