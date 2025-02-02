@@ -14,10 +14,10 @@ interface User {
 
 const UserTable = async ({sortOrder}: Props) => {
 
-    const res = await fetch('https://jsonplaceholder.typicode.com/users')
+    const res = await fetch('https://jsonplaceholder.typicode.com/busers')
     const users: User[] = await res.json()
 
-    sort(users).asc(
+    const sortedUsers = sort(users).asc(
       sortOrder === "emali" ?
       (user) => user.email
       :(user) => user.name
@@ -32,7 +32,7 @@ const UserTable = async ({sortOrder}: Props) => {
             <Link href="/users?sortOrder=name">Name</Link>
           </th>
           <th>
-            <Link href='/users?sortOrder=email'>Email</Link>
+            <Link href="/users?sortOrder=email">Email</Link>
           </th>
         </tr>
       </thead>
